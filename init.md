@@ -1,19 +1,19 @@
 
-***  npm i -g typescript 全局安装 以便 tsc 命令 ***
-*** tsc --init 创建tsconfig 配置文件 ***
-*** tsc ./src/index.ts ***
+*  npm i -g typescript 全局安装 以便 tsc 命令 *
+* tsc --init 创建tsconfig 配置文件 *
+* tsc ./src/index.ts *
 #  main 入口详解 参考  [githup](https://github.com/SunshowerC/blog/issues/8)
 
-*** npm i webpack webpack-cli webpack-dev-server -D  搭建服务 ***
+* npm i webpack webpack-cli webpack-dev-server -D  搭建服务 *
 
-*** webpack version < 5  ***
+* webpack version < 5  *
 # webpack-dev-server --mode=development --config ./build/webpack.config.js
 
-*** webpack version 5  ***
+* webpack version 5  *
 # webpack serve --mode development --env development --config ./build/webpack.config.js
 
 
-*** TS 数据类型 ***
+* TS 数据类型 *
 Boolean, Number, String, Array, Function, Object, Symbol, undefined, null, BigInt
 
 void  void 0; eg: return undefined
@@ -21,7 +21,7 @@ any   anyscript
 never  从不返回值，死循环，异常抛出
 
 元组
-# let tuple: [number, string] = [0, '1']
+`let tuple: [number, string] = [0, '1']`
 元组越界能添加不能访问
 
 枚举 & 常量枚举
@@ -44,14 +44,14 @@ never  从不返回值，死循环，异常抛出
 
 ------
 
- *** 高级类型 ***
+ * 高级类型 *
 
-*** 接口 interface ***
+* 接口 interface *
  交互数据有多余参数
  解决方案：
  1： 不直接传入对象字面量，先赋值给一个变量
  2： 类型断言 ，推荐react项目使用 as
- # eg:  render({} as RS) 非 render(<RS>{})
+`eg:  render({} as RS) 非 render(<RS>{})`
 
  3:  字符串索引签名
 ```
@@ -90,7 +90,7 @@ abstract class Anim {
 抽象类抽离事物共性，实现代码复用
 多态： 在父类中定义方法，在多子类中有不同的实现，在程序运行时依据不同的对象执行不同的操作，实现运行时的绑定。
 
-*** 类与接口 ***
+* 类与接口 *
 类实现接口必须实现接口声明的所有属性。
 接口只能约束类的公有成员。
 接口不能约束类的构造函数。
@@ -98,7 +98,7 @@ abstract class Anim {
 接口抽离类的成员时，不仅抽离公共成员，也包括私有成员和受保护成员
 implements
 
-*** 泛型  !important ***
+* 泛型  !important *
 不预先确定的数据类型，具体类型在使用的时候才确定。
 
 泛型类
