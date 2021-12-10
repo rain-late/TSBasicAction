@@ -2,7 +2,7 @@
 *  npm i -g typescript 全局安装 以便 tsc 命令 *
 * tsc --init 创建tsconfig 配置文件 *
 * tsc ./src/index.ts *
-#  main 入口详解 参考  [githup](https://github.com/SunshowerC/blog/issues/8)
+#  main 入口详解 参考  [github](https://github.com/SunshowerC/blog/issues/8)
 
 * npm i webpack webpack-cli webpack-dev-server -D  搭建服务 *
 
